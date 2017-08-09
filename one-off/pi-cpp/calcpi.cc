@@ -10,6 +10,9 @@ typedef std::numeric_limits<double> dbl;
 
 using std::cout;
 
+// CalcPi computes a numerical Pi approximation
+// by running N iterations of the Leibniz formula
+// ref: https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80
 double CalcPi(int N) {
   double sign = 1, quarter_pi = 0;
   for (int n=0; n < N; ++n) {
