@@ -17,6 +17,7 @@ func main() {
 	http.ListenAndServe(":" + *port, nil)
 }
 
+// EchoHandler echoes back HTTP requests to the sender
 func EchoHandler(w http.ResponseWriter, request *http.Request) {
 	log.Printf("Echoing back request made to %s to client (%s)", request.URL.Path, request.RemoteAddr)
 	request.Write(w)

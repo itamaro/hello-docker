@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 # Copyright 2017 Itamar Ostricher
 
+"""A simple echo server using Sanic"""
+
 from sanic import Sanic
 from sanic.response import json, raw
 

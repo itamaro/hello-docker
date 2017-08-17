@@ -1,5 +1,6 @@
 // -*- coding: utf-8 -*-
 // Copyright 2017 Itamar Ostricher
+// A simple echo server using Boost ASIO
 
 #include <boost/asio.hpp>
 #include <boost/asio/spawn.hpp>
