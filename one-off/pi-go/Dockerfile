@@ -1,6 +1,6 @@
 # Using multi-stage build to compile in "builder image" and use a slimmer "runtime image" as final artifact
 
-FROM golang:1.8 as builder
+FROM golang:1.9 as builder
 WORKDIR /go/src/github.com/itamaro/hello-docker/one-off/pi-go
 COPY calcpi.go ./
 # Need to create 100% static binaries to make it work in scratch / alpine
